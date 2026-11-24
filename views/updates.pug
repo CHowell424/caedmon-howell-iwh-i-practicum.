@@ -1,0 +1,40 @@
+doctype html
+html 
+     head 
+         title= `${title}`
+         meta(name="viewport" content="width=device-width, initial-scale=1")
+         link(rel="stylesheet", href="/css/style.css")
+         a(href="/") Return to the homepage
+     body    
+         h1 Add A Vehicles
+         form(action="/update-cobj" method="POST")
+            div.row 
+                label(for="name") Name Your Vehicle:
+                input#name(type="text" name="name" required)
+
+                label(for="make") Vehicle Make:
+                select#color(name="make" required)
+                    option(value="Ford") Ford
+                    option(value="Mazda") Mazda
+                    option(value="Mini") Mini
+                    option(value="Subaru") Subaru
+                    option(value="Nissan") Nissan
+                    option(value="Kia") Kia
+                    option(value="Hyundai") Hyundai
+                    option(value="Handa") Handa
+                    option(value="Saab") Saab
+                    option(value="Toyota") Toyota
+                    option(value="Dodge") Dodge
+                    option(value="Chevy") Chevy
+                    option(value="Fiat") Fiat
+            div.row
+                label(for="model") Model:
+                input#name(type="text" name="model" required)
+
+                label(for="model") Year:
+                input#name(type="number" name="year" required)
+            div.row
+                label(for="vin") VIN:
+                input#name(type="text" name="vin" required)
+            div.row
+                button(type="submit") Add
