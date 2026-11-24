@@ -86,3 +86,39 @@ button{
     margin-top: 20px;
     width: 30px;
 }
+
+.name{
+    width:150px;
+    background-color: gainsboro;
+    border: solid;
+    border-color:black;
+}
+.make{
+    width:100px;
+    background-color: gainsboro;
+    border: solid;
+    border-color:black;
+}
+.model{
+    width:125px;
+    background-color: gainsboro;
+    border: solid;
+    border-color:black;
+}
+.year{
+    width:125px;
+    background-color: gainsboro;
+    border: solid;
+    border-color:black;
+}
+.vin{
+    width:200px;
+    background-color: gainsboro;
+    border: solid;
+    border-color:black;
+
+}
+
+.l{
+    background-color: lightblue !important;
+}

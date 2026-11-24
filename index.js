@@ -27,8 +27,7 @@ app.get("/", async (req,res)=>{
       
     );
     res.status(200)
-    data = response.data.results;
-
+    data = response.data.results.sort((a,b)=>a.properties.name.localeCompare(b.properties.name));
     console.log(data)
   } catch (error) {
     const status = error.response?.status || 500;

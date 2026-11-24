@@ -6,8 +6,22 @@ html
          link(rel="stylesheet", href="/css/style.css")
      body    
          h1 Vehicles
+         a(href="/update-cobj") Add/Update a vehicle
          if data
-            for result in data
-                p  #{result.id}
+            div.col
+                div.row
+                    p.name.l Name
+                    p.make.l Make
+                    p.model.l Model
+                    p.year.l Year
+                    p.vin.l Vin
+                for result in data
+                    div.row 
+                        p.name  #{result.properties.name}
+                        p.make  #{result.properties.make}
+                        p.model  #{result.properties.model}
+                        p.year  #{result.properties.year}
+                        p.vin  #{result.properties.vin}
          else 
-            p not found
+            p We were unable to find any vehicles at this time.
+            p Please try again later
